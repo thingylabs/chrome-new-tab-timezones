@@ -42,6 +42,7 @@
       display: flex;
       justify-content: center;
       margin-bottom: 3rem;
+      transition: opacity 0.3s ease;
     }
 
     .grid {
@@ -57,6 +58,7 @@
       border-radius: 0.75rem;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: all 0.2s;
+      position: relative;
     }
 
     body.dark .card {
@@ -93,6 +95,30 @@
       margin-top: 0.25rem;
     }
 
+    .focus-icon {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: opacity 0.2s;
+    }
+
+    .focus-icon:hover {
+      opacity: 1;
+    }
+
+    .focus-icon.active {
+      opacity: 1;
+      color: var(--accent-day);
+    }
+
+    body.dark .focus-icon.active {
+      color: var(--accent-night);
+    }
+
     #progress-indicator svg {
       transform: rotate(-90deg);
     }
@@ -108,6 +134,54 @@
     body.dark #progress-indicator text {
       fill: var(--text-dark);
     }
+
+    .zone-label {
+      position: absolute;
+      bottom: -24px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.75rem;
+      opacity: 0.7;
+      white-space: nowrap;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.875rem;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+
+    .footer:hover {
+      opacity: 1;
+    }
+
+    body.dark .footer {
+      color: var(--text-dark);
+    }
+
+    .thingy-link {
+      color: inherit;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .thingy-link:hover {
+      text-decoration: underline;
+    }
+
+    .thingy-bolt {
+      display: inline-block;
+      transform: translateY(-1px);
+    }
   </style>
 </head>
 <body>
@@ -119,5 +193,10 @@
       <!-- Timezone cards will be inserted here -->
     </div>
   </div>
+  <footer class="footer">
+    <a href="https://thingylabs.io" class="thingy-link" target="_blank">
+      Built with <span class="thingy-bolt">⚡</span> by Thingylabs
+    </a>
+  </footer>
 </body>
 </html>
