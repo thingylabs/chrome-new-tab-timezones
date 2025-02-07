@@ -7,9 +7,6 @@
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
-  "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self'"
-  },
   "icons": {
     "48": "icon48.png",
     "128": "icon128.png"
