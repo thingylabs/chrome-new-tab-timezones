@@ -2,7 +2,7 @@
 
 A beautiful Chrome extension that transforms your new tab page into a clean, minimal timezone dashboard. Built by [Thingylabs](https://github.com/thingylabs).
 
-![Screenshot of Time Zones Tab](screenshot.png)
+![Screenshot of Time Zones Tab](chrome-new-tab-timezones.png)
 
 ## Features
 
