@@ -34,7 +34,7 @@ cd chrome-new-tab-timezones
 
 ### From Chrome Web Store
 
-*Coming soon*
+↩ https://chromewebstore.google.com/detail/time-zones-tab/pgejeagdoldfhmgofefpoiojfagmmhea
 
 ## Development
 
